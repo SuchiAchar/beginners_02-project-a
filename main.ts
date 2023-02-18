@@ -1,6 +1,21 @@
 input.onButtonPressed(Button.A, function () {
-    basic.showIcon(IconNames.Giraffe)
+    basic.showLeds(`
+        . # # . .
+        . . # . .
+        . # # # .
+        . # # # .
+        . # # # .
+        `)
 })
+basic.showNumber(3)
+basic.showNumber(2)
+basic.showNumber(1)
 basic.forever(function () {
-    basic.showIcon(IconNames.Heart)
+    basic.showLeds(`
+        . . . . .
+        . . # . .
+        . # # # .
+        . # # # .
+        . # # # .
+        `)
 })
